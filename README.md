@@ -4,6 +4,9 @@ I will give you a walk through on how to build out the project.
 
 ## Install Packages & Initial Setup
 
+Before you begin, you will need to gain access to the Tracker API to use for the project. You will need to go to 
+<https://tracker.gg/developers> to sign up for an account if you do not have one.
+
 We first need to set up NPM. We do the following command and configure package.json. After set up `package.json` file, you will need to install the following packages: `express` `morgan` `dotenv` `node-fetch` `concurrently`
 
 `$ npm init`
