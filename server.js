@@ -5,8 +5,13 @@ const dotenv = require('dotenv');
 // Load env
 dotenv.config({ path: './config.env'});
 
-const app = express();
 const port = process.env.PORT || 8000;
+const app = express();
+
+// Dev logging
+if (process.env.NODE_ENV === 'development') {
+  app.use(morgan('dev'));
+}
 
 // Profile routes
 app.use('/api/v1/profile', require('./routes/profiles'));
