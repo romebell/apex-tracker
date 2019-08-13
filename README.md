@@ -143,3 +143,11 @@ app.listen(port, () => {
   console.log(`Server running in ${process.env.NODE_ENV} mode on port ${port}`);
 });
 ```
+
+Now, we want to create our first and only route for this application. We add the following to `server.js`
+
+```
+app.get('/api/v1/profile/:plateform/:gamertag', (req, res) => {
+  res.send('Hello');
+});
+```
