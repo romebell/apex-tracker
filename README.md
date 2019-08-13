@@ -114,3 +114,32 @@ NODE_ENV=development
 TRACKER_API_URL=https://public-api/tracker.gg/v2/apex/standard
 TRACKER_API_URL=XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXX (Your API key here)
 ```
+
+Remember: In order for any updates to take effect inside of `config.env` you have to restart the server.
+
+Now inside of `server.js` we want to add a path to the config to access the environment variables from anywhere in the application
+
+```
+dotenv.config({ path: './config.env});
+
+const port = process.env.PORT || 8000;
+
+```
+
+We now need to update the rest of the `server.js` by adding the port variable to listen on the app. Your `server.js` file should now look like the following:
+
+```
+const express = require('express');
+const morgan = require('morgan');
+const dotenv = require('dotenv');
+
+// Load env
+dotenv.config({ path: './config.env'});
+
+const port = process.env.PORT || 8000;
+const app = express();
+
+app.listen(port, () => {
+  console.log(`Server running in ${process.env.NODE_ENV} mode on port ${port}`);
+});
+```
