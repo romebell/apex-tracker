@@ -100,6 +100,17 @@ app.listen(5000, () =>
 
 Once that is save, we want to start the server. In your terminal you want to do
 
-`$ npm start`
+`$ npm run server`
 
 From here it will print "Server Running".
+
+The next thing that we are going to do put everything inside a environment variables and ports. We can also add API keys here as well. Therefore, we want to add file called `config.env` to the main directory.
+
+Inside of `config.env` we want to add the the following: 
+
+```
+PORT=5000
+NODE_ENV=development
+TRACKER_API_URL=https://public-api/tracker.gg/v2/apex/standard
+TRACKER_API_URL=XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXX (Your API key here)
+```
