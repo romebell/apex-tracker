@@ -148,6 +148,8 @@ Now, we want to create our first and only route for this application. We add the
 
 ```
 app.get('/api/v1/profile/:plateform/:gamertag', (req, res) => {
-  res.send('Hello');
+  res.send('Apex Tracker');
 });
 ```
+
+Since we now have the server running, we now want to set up a folder called `routes` and we are going to put all of our route functionality there. Our folder `routes` will sit in the main directory.
