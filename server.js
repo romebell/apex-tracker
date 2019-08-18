@@ -20,3 +20,5 @@ app.use('/api/v1/profile', require('./routes/profiles'));
 app.listen(port, () => {
   console.log(`Apex Legends Tracker: SERVER ON \n - ${process.env.NODE_ENV} mode on port ${port}`);
 });
+
+// Backend Complete
