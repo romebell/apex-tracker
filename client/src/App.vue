@@ -1,5 +1,5 @@
 <template>
-  <div id="app">Apex Tracker</div>
+  <div class="container">Apex Tracker</div>
 </template>
 
 <script>
