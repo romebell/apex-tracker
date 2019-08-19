@@ -40,9 +40,12 @@ export default {
     document.body.className = "body-bg-image";
   },
   methods: {
-    OnSubmit() {
+    onSubmit() {
       if (!this.gamertag) {
-        // Enter a gamertag
+        this.$toasted.show("Please enter a gamertaag", {
+          duration: 3000,
+          icon: "exclamation-circle"
+        });
       } else {
         // will redirect
       }
