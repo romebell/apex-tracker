@@ -1,7 +1,16 @@
 <template>
-  <div>
-    Profile
-  </div>
+  <section>
+    <div v-if="loading">
+      <h3>Loading...</h3>
+    </div>
+    <div v-if="error">
+      <h1>{{ error }}</h1>
+      <router-link to="/">Go Back</router-link>
+    </div>
+    <div v-if="profileData" class="container">
+    {{ profileData.metadata.activeLegendName }}
+    </div>
+  </section>
 </template>
 
 <script>
@@ -21,10 +30,14 @@ export default {
   async created() {
     this.loading = true;
     try {
-      const response = await axios.get(`http://localhost:5000/api/v1/profile/
-        ${this.$route.params.platform}/${this.$route.params.gamertag}`);
-        this.profileData = response.data.data;
+      const res = await axios.get(
+        `
+        /api/v1/profile/${this.$route.params.platform}/${this.$route.params.gamertag}
+        `
+        );
+        this.profileData = res.data.data;
         // console.log(this.profileData);
+
         this.loading = false;
     } catch (err) {
       this.loading = false;
