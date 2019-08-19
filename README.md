@@ -159,3 +159,5 @@ app.get('/api/v1/profile/:plateform/:gamertag', (req, res) => {
 ```
 
 Since we now have the server running, we now want to set up a folder called `routes` and we are going to put all of our route functionality there. Our folder `routes` will sit in the main directory.
+
+More documentation coming soon ...
