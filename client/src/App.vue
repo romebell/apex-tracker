@@ -1,16 +1,19 @@
 <template>
   <div class="container">
     <Header />
+    <Search />
     </div>
 
 </template>
 
 <script>
-import Header from './components/Header'
+import Header from './components/Header';
+import Search from './components/Search';
 export default {
   name: 'app',
   components: {
-    Header
+    Header,
+    Search
   }
 }
 </script>
