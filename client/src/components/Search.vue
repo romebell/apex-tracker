@@ -21,7 +21,7 @@
         />
       </div>
       <div class="form-group">
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" class="btn">
       </div>
     </form>
   </section>
@@ -29,7 +29,13 @@
 
 <script>
 export default {
-
+  name: 'Search',
+  data() {
+    return {
+      platform: "psn",
+      gamertag: ""
+    }
+  }
 }
 </script>
 
