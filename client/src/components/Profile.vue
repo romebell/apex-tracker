@@ -8,7 +8,9 @@
       <router-link to="/">Go Back</router-link>
     </div>
     <div v-if="profileData" class="container">
-    {{ profileData.metadata.activeLegendName }}
+    <h1 class="gamertag">
+      <img :src="profileData.platformInfo.avatarUrl" alt="" class="platform-avatar">
+    </h1>
     </div>
   </section>
 </template>
