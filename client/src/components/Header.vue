@@ -15,6 +15,15 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+  img {
+    width: 300px;
+  }
 
+  @media(max-width: 700px) {
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
 </style>
