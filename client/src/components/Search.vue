@@ -38,6 +38,15 @@ export default {
   },
   beforeCreate() {
     document.body.className = "body-bg-image";
+  },
+  methods: {
+    OnSubmit() {
+      if (!this.gamertag) {
+        // Enter a gamertag
+      } else {
+        // will redirect
+      }
+    }
   }
 }
 </script>
