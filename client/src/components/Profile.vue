@@ -29,6 +29,27 @@
                 <span>({{ profileData.segments[0].stats.season2Wins.percentile }})</span>
               </p>
             </li>
+            <li v-if="profileData.segments[0].stats.level">
+              <h4>Apex Level</h4>
+              <p>
+                {{ profileData.segments[0].stats.level.displayValue }}
+                <span>({{ profileData.segments[0].stats.level.percentile }})</span>
+              </p>
+            </li>
+            <li v-if="profileData.segments[0].stats.kills">
+              <h4>Lifetime Kills</h4>
+              <p>
+                {{ profileData.segments[0].stats.kills.displayValue }}
+                <span>({{ profileData.segments[0].stats.kills.percentile }})</span>
+              </p>
+            </li>
+            <li v-if="profileData.segments[0].stats.damage">
+              <h4>Damage Done</h4>
+              <p>
+                {{ profileData.segments[0].stats.damage.displayValue }}
+                <span>({{ profileData.segments[0].stats.damage.percentile }})</span>
+              </p>
+            </li>
           </ul>
         </div>
       </div>
