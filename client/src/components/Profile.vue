@@ -22,6 +22,13 @@
               <h4>Selected Legend</h4>
               <p>{{ profileData.metadata.activeLegendName }}</p>
             </li>
+            <li v-if="profileData.segments[0].stats.season2Wins">
+              <h4>Season 2 Wins</h4>
+              <p>
+                {{ profileData.segments[0].stats.season2Wins.displayValue }}
+                <span>({{ profileData.segments[0].stats.season2Wins.percentile }})</span>
+              </p>
+            </li>
           </ul>
         </div>
       </div>
