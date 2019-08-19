@@ -1,5 +1,9 @@
 # Apex Legends Tracker
 
+Apex Legends Tracker was web app built to access and show data from tracker API. The is a full stack application built using Express, Vue.js, and Tracker Network API.
+
+Here is the link to the [Live Site](https://apex-legend-tracker-1.herokuapp.com).
+
 I will give you a walk through on how to build out the project.
 
 ## Install Packages & Initial Setup
