@@ -48,6 +48,7 @@ export default {
         });
       } else {
         // will redirect
+        this.$router.push(`/profile/${this.platform}/${this.gamertag}`);
       }
     }
   }
