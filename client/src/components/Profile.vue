@@ -10,6 +10,7 @@
     <div v-if="profileData" class="container">
     <h1 class="gamertag">
       <img :src="profileData.platformInfo.avatarUrl" alt="" class="platform-avatar">
+      {{ profileData.platformInfo.platformUserId }}
     </h1>
     </div>
   </section>
