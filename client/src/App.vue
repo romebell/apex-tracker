@@ -1,12 +1,16 @@
 <template>
-  <div class="container">Apex Tracker</div>
+  <div class="container">
+    <Header />
+    </div>
+
 </template>
 
 <script>
-
+import Header from './components/Header'
 export default {
   name: 'app',
   components: {
+    Header
   }
 }
 </script>
